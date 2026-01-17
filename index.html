@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quran Noble - Accueil</title>
+  <meta name="description" content="Quran Noble : Coran complet, traduction, audio karaoké de trois récitateurs, design noir-bleu"/>
+  <link href="[https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Lora:ital](https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Lora:ital),wght@0,400;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0a0e1a 0%, #111827 50%, #1a2332 100%);
+      color: #f9fafb;
+      font-family: 'Lora', 'Georgia', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box {
+      background: rgba(30, 58, 138, 0.15);
+      box-shadow: 0 12px 50px #111827ee;
+      max-width: 600px;
+      width: 92vw;
+      padding: 2.5rem 2rem;
+      border-radius: 1.8rem;
+      border: 1px solid #374151;
+      text-align: center;
+      animation: fade-in 1s;
+    }
+    @keyframes fade-in {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: none;}
+    }
+    .arabic {
+      font-family: 'Amiri Quran', 'Scheherazade New', serif;
+      font-size: 2.2rem;
+      direction: rtl;
+      color: #f0f6ff;
+      margin-bottom: 6px;
+      margin-top: 14px;
+    }
+    .button {
+      background: linear-gradient(87deg, #2563eb 35%, #1e40af 100%);
+      color: #fff; font-weight: 600;
+      border: none; border-radius: .9rem; font-size: 1.25rem;
+      padding: .9rem 2.5rem; cursor: pointer;
+      margin-top: 2rem; margin-bottom: 1rem;
+      box-shadow: 0 2px 18px #2563eb55;
+      transition: background .14s, transform .14s;
+    }
+    .button:hover { background: #1e40af; transform: scale(1.04); }
+    .reciters {
+      margin: 1.4rem 0 .4rem 0;
+      display: flex; flex-direction: column; gap:.5rem; align-items: center;
+    }
+    .reciter {
+      color:#3b82f6; font-size:1.1rem; letter-spacing:.01em; font-style:italic;
+    }
+    .subtitle {color:#a7c7ff;font-size:.95rem;margin-bottom:1.1rem}
+    .footer {font-size:.93rem;color:#c1c6ce;margin-top:2rem;letter-spacing:.02em;}
+    .badge {background:#1e40af;color:#fff;font-size:.8rem;padding:.24em .7em;border-radius:8px;margin-left:.7em;}
+    @media (max-width: 490px) {.box{padding:1.2rem .3rem;}}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1 style="font-size:2.45rem;font-weight:800;">Quran Noble <span class="badge">v1.0</span></h1>
+    <div class="subtitle">Lecture, traduction française et récitation audio du Coran (karaoké interactif) 🎵</div>
+    <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <div style="color:#bad4ff; margin-bottom:1.8rem;font-size:1.04rem;">
+      Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux
+    </div>
+    <div class="reciters">
+      <div>🎤 <span class="reciter">Yasser Al-Dosary</span></div>
+      <div>🎤 <span class="reciter">Mahdi Ash Shisani</span></div>
+      <div>🎤 <span class="reciter">Muhammad Al Luhaidan</span></div>
+    </div>
+    <a class="button" href="https://app-preview-572cc87a955a6d62fa3cd25573ee088b.codebanana.com" target="_blank">Découvrir le Coran&nbsp;→</a>
+    <div style="margin:.6rem 0; color:#9be2ff;font-size:.99rem;">Thème noir & bleu foncé. Design inspiré de Quran.com.<br/>Lecture karaoké + navigation Juz/Sourate.</div>
+    <div class="footer">
+      Codé avec ❤️ &bull; <a href="https://github.com/" style="color:#60a5fa;text-decoration:underline;">Voir sur GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
